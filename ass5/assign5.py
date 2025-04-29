@@ -27,8 +27,8 @@ def BuildModel(X, Y):
     cm = confusion_matrix(ytest, ypred)
     sns.heatmap(cm, annot=True, cmap="Blues")
     plt.title('Confusion Matrix')
-    plt.xlabel('Predicted')
-    plt.ylabel('Actual')
+    plt.xlabel('Actual')
+    plt.ylabel('Predicted')
     plt.show()
     print(classification_report(ytest, ypred))
 
